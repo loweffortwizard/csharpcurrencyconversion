@@ -17,6 +17,8 @@ API key must be defined through the 'SetApiKey' method before converting. Someth
   
 You may wish to review avalible symbols for conversion. Seen under region tags in 'Symbols.cs'
 
+Will also require Newtonsoft.Json.Linq as a dependency for web communication with openex and fixer.
+
 Convert:
 Import Library to existing project (like this):
 	'using Conversion;'
