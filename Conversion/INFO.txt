@@ -1,0 +1,36 @@
+﻿Overview. 
+
+Summary:
+C# library for real-time currency conversion and exchange rates using Fixer and OpenExchange API.
+
+How To Use:
+
+Set up:
+The fixer.io and openexchange requires an API key. A free key is avalible for both (requies account creation) allowing up to 1000 requests/month
+
+API key must be defined through the 'SetApiKey' method before converting. Something like:
+	Fixer.SetApiKey("your api key here");
+	OpenEx.SetApiKey("your api key here");
+
+Convert:
+Import Library to existing project (like this):
+	'using Conversion;'
+
+	double sixtyFiveUsToGb = OpenEx.Convert(Symbols.USD, Symbols.GBP, 65); 
+	double sixtySixUsToGb = OpenEx.Convert(Symbols.USD, Symbols.GBP, 66);
+
+	console.writeline(sixtyFiveUsToGb);
+	console.writeline(sixtySixUsToGb);
+
+Acknowledgements:
+Developed for a university project.
+Developed and based on the work from Ryan Morrin's "FixerSharp".
+Makes use of the fixer and open exchange api's for real-time exchange rates.
+
+Use this as you wish!
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so.
